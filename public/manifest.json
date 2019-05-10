@@ -1,6 +1,6 @@
 {
-  "short_name": "Recetas",
-  "name": "Recetas",
+  "short_name": "Las Recetas",
+  "name": "Las Recetas",
   "icons": [
     {
       "src": "/icon.png",
@@ -11,7 +11,7 @@
   "start_url": "/",
   "scope":"/",
   "display": "standlone",
-  "theme_color": "#ffa500",
+  "theme_color": "#ff0000",
   "background_color": "#ffffff",
   "related_applications": [],
   "prefer_related_aplications":false
