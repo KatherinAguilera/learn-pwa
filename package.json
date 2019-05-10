@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve ./build -s -p ${PORT:-4000}",
+    "start": "serve ./build -s -l 5000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
