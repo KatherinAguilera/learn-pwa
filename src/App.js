@@ -7,12 +7,13 @@ import './App.css'
 import { createBrowserHistory } from 'history'
 import ReactGA from 'react-ga'
 
- const history = createBrowserHistory()
+// Google analytics
+const history = createBrowserHistory()
 
- ReactGA.initialize('UA-000000-01')
+ReactGA.initialize('UA-000000-01')
 ReactGA.pageview(window.location.pathname + window.location.search)
 
- history.listen(function(location) {
+history.listen(function(location) {
   ReactGA.pageview(window.location.pathname + window.location.search)
 })
 
