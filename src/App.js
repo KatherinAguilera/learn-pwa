@@ -25,11 +25,11 @@ export default class App extends React.Component {
       <Router history={ history }>
         <div>
           <header>
-            <Link to="/">Recetas
+            <Link to="/">Recipes
               <IfOffline>Offline</IfOffline>
             </Link>
             <Link to="/timer"
-              className="timerLink">reloj
+              className="timerLink">⏱
             </Link>
           </header>
 

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import mealdb from '../mealdb-api'
 import RecipeIngredients from '../components/RecipeIngredients'
 import RecipeInstructions from '../components/RecipeInstructions'
+import Loader from '../components/Loader';
 
 export default class Recipe extends React.Component {
 
@@ -41,7 +42,7 @@ export default class Recipe extends React.Component {
     const { recipe, isLoading } = this.state
 
     if( isLoading ) {
-      return <div className="message">Cargando...</div>
+      return <div className="message"><Loader/></div>
     }
     else if( recipe === null ) {
       return <div className="message">Hubo un problema :(</div>

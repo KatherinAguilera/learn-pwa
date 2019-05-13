@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import { Helmet } from 'react-helmet'
 import mealdb from '../mealdb-api'
+import Loader from '../components/Loader';
 
 export default class Home extends React.Component {
 
@@ -22,12 +23,12 @@ export default class Home extends React.Component {
     const { recipes, isLoading } = this.state
 
     if( isLoading ) {
-      return <div className="message">Cargando...</div>
+      return <div className="message"><Loader/></div>
     }
 
     return <div>
       <Helmet>
-        <title>Recetas</title>
+        <title>Recipes</title>
       </Helmet>
 
       <div className="recipes">
